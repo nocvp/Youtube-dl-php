@@ -69,7 +69,9 @@
 <div class="highlight highlight-php"><pre><span class="k">use</span> <span class="nx">Youtubedl\Youtubedl</span><span class="p">;</span>
 
 <span class="nv">$youtubedl</span><span class="o">=</span><span class="k">new</span> <span class="nx">Youtubedl</span><span class="p">();</span>
-<span class="nv">$youtubedl</span><span class="o">-&gt;</span><span class="na">download</span><span class="p">(</span><span class="s1">'BaW_jenozKc'</span><span class="p">)</span>
+<span class="nv">$youtubedl</span><span class="o">-&gt;</span><span class="na">getFilesystemOption</span><span class="p">()</span>
+          <span class="o">-&gt;</span><span class="na">setOutput</span><span class="p">(</span><span class="s2">"</span><span class="se">\"</span><span class="s2">/tmp/%(title)s.%(ext)s</span><span class="se">\"</span><span class="s2">"</span><span class="p">);</span>
+<span class="nv">$youtubedl</span><span class="o">-&gt;</span><span class="na">download</span><span class="p">(</span><span class="s1">'BaW_jenozKc'</span><span class="p">);</span>
 </pre></div>
       </section>
 
