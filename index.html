@@ -49,6 +49,8 @@
         <h1>
 <a name="youtube-dl-php" class="anchor" href="#youtube-dl-php"><span class="octicon octicon-link"></span></a>YouTube-dl-php</h1>
 
+<p>This library is a PHP implementation of <a href="https://github.com/rg3/youtube-dl">Youtube-dl</a> for downloading video from Youtube and other sites.</p>
+
 <h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
@@ -59,6 +61,15 @@
         <span class="nt">"chellem/youtube-downloader"</span><span class="p">:</span> <span class="s2">"dev-master"</span>
     <span class="p">}</span>
 <span class="p">}</span>
+</pre></div>
+
+<h2>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<div class="highlight highlight-php"><pre><span class="k">use</span> <span class="nx">Youtubedl\Youtubedl</span><span class="p">;</span>
+
+<span class="nv">$youtubedl</span><span class="o">=</span><span class="k">new</span> <span class="nx">Youtubedl</span><span class="p">();</span>
+<span class="nv">$youtubedl</span><span class="o">-&gt;</span><span class="na">download</span><span class="p">(</span><span class="s1">'BaW_jenozKc'</span><span class="p">)</span>
 </pre></div>
       </section>
 
