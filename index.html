@@ -80,6 +80,17 @@
 </pre></div>
 
 <h3>
+<a name="multiple-download" class="anchor" href="#multiple-download"><span class="octicon octicon-link"></span></a>Multiple Download</h3>
+
+<div class="highlight highlight-php"><pre><span class="k">use</span> <span class="nx">Youtubedl\Youtubedl</span><span class="p">;</span>
+
+<span class="nv">$youtubedl</span><span class="o">=</span><span class="k">new</span> <span class="nx">Youtubedl</span><span class="p">();</span>
+<span class="nv">$youtubedl</span><span class="o">-&gt;</span><span class="na">getFilesystemOption</span><span class="p">()</span>
+          <span class="o">-&gt;</span><span class="na">setOutput</span><span class="p">(</span><span class="s2">"</span><span class="se">\"</span><span class="s2">/tmp/%(title)s.%(ext)s</span><span class="se">\"</span><span class="s2">"</span><span class="p">);</span>
+<span class="nv">$youtubedl</span><span class="o">-&gt;</span><span class="na">download</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">'BaW_jenozKc'</span><span class="p">,</span><span class="s1">'dOibtqWo6z4'</span><span class="p">));</span>
+</pre></div>
+
+<h3>
 <a name="extractor-list" class="anchor" href="#extractor-list"><span class="octicon octicon-link"></span></a>Extractor List</h3>
 
 <div class="highlight highlight-php"><pre><span class="k">use</span> <span class="nx">Youtubedl\Youtubedl</span><span class="p">;</span>
