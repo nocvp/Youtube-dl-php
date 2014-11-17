@@ -1,5 +1,5 @@
 {
-    "name": "chellem/youtube-downloader",
+    "name": "noc-med/youtube-dl-php",
     "description": "PHP library to download video",
     "keywords": ["youtube", "download"],
     "type": "library",
