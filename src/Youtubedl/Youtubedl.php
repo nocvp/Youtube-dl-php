@@ -59,6 +59,8 @@ class Youtubedl
                         return $this->verbosity ? $this->Verbosity:$this->verbosity=new Verbosity();
                     case 'video':
                         return $this->video? $this->video:$this->video=new Video();
+                    case 'format':
+                        return $this->format? $this->format:$this->format=new Format();
                 }
             } else {
                 return $this->option ? $this->option:$this->option=new General();
